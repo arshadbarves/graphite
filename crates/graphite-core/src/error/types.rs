@@ -189,6 +189,7 @@ impl CoreError {
 mod tests {
     use super::*;
     use std::io;
+    use std::error::Error;
 
     #[test]
     fn test_node_error_creation() {
@@ -314,7 +315,7 @@ mod tests {
             CoreError::external_service_error("test"),
         ];
 
-        // Each should have correct category
+        // Each should have the correct category
         let expected_categories = vec![
             "state", "execution", "checkpoint", "edge", "concurrency",
             "configuration", "resource", "validation", "internal", "external_service"

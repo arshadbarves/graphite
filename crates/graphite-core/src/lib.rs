@@ -10,3 +10,5 @@
 #![warn(clippy::pedantic)]
 #![allow(clippy::module_name_repetitions)]
 
+/// Error handling and result types
+pub mod error;
