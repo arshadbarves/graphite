@@ -1,0 +1,26 @@
+[package]
+name = "graphite-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+readme.workspace = true
+publish.workspace = true
+categories.workspace = true
+keywords.workspace = true
+description = "Core foundation for the Graphite multi-agent framework, providing essential utilities and abstractions"
+
+[dependencies]
+# Core async runtime
+tokio = { workspace = true }
+futures = { workspace = true }
+
+# Serialization and state management
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
